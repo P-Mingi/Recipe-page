@@ -13,13 +13,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](https://github.com/P-Mingi/Social-links-profile/blob/main/assets/images/screenshot.png?raw=true)
+![](https://github.com/P-Mingi/Recipe-page/blob/main/assets/images/screenshot.png?raw=true)
 
 
 ### Links
 
 - Solution URL: [My Solution Site URL](https://www.frontendmentor.io/solutions/social-links-profile-htmlcss-4bpUdR6FX2)
-- Live Site URL: [My Live Site URL](https://p-mingi.github.io/Social-links-profile/)
+- Live Site URL: [My Live Site URL](https://p-mingi.github.io/Recipe-page/)
 
 
 ### Built with
