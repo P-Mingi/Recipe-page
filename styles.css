@@ -5,7 +5,6 @@
 
 :root {
     --Nutmeg: hsl(14, 45%, 36%);
-    --Dark-Raspberry-Low: hsl(332, 51%, 32%, .2);
     --Dark-Raspberry: hsl(332, 51%, 32%);
     --White: hsl(0, 0%, 100%);
     --Rose-White: hsl(330, 100%, 98%);
@@ -24,12 +23,8 @@ body {
     background-color: var(--Eggshell);
 }
 
-.margin {
-    margin: 1.5rem 3rem;
-}
-
 .bold {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .space {
@@ -40,61 +35,85 @@ body {
 h1, h2 {
     font-family: "Young Serif", serif;
 }
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+p, li {
+    font-size: 1.6rem;
+    color: var(--Wenge-Brown);
+}
+
+.margin {
+    margin: 2rem 0;
+}
+
+.bottom {
+    margin-bottom: 2rem;
+}
+
+li {
+    margin: 1.5rem 0;
+}
 
 .container {
     background-color: var(--White);
-    max-width: 80rem;
-    margin: 7rem auto;
+    width: 80rem;
     display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
+    justify-content: center;
+    margin: auto;
     border-radius: 2rem;
+    padding: 3.5rem 0;
+}
+
+.padding {
+    background-color: var(--White);
+    width: 90%;
 }
 
 .omelette {
     max-width: 100%;
-    height: auto;
-    margin: 3rem 3rem 1rem 3rem;
     border-radius: 1rem;
 }
 
-
-@media only screen and (max-width: 500px) {
-    .omelette {
-      margin: 0 0 2rem 0;
-      border-radius: 0;
-    }
-    .container {
-        border-radius: 0;
-        margin: 0;
-    }
-}
-
 .title h1 {
-    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
-.title p {
-    font-size: 1.6rem;
-    color: var(--Wenge-Brown);
-    font-weight: none;
-}
 
 .preparation {
-    background-color: var(--Dark-Raspberry-Low);
+    background-color: var(--Rose-White);
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
+ 
 }
 
-.preparation h2{
+.preparation h2,  .preparation ::marker {
+    font-size: 2.2rem;
+    font-family: "Outfit", sans-serif;
     color: var(--Dark-Raspberry);
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
 }
 
-.preparation li {
-    margin: 1rem 0;
-    font-size: 1.6rem;
+.ingredients h2, 
+.ingredients ::marker,
+.instructions h2,
+.instructions ::marker {
+    color: var(--Nutmeg);
+}
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
