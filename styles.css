@@ -67,7 +67,7 @@ li {
     max-width: 80rem;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 10rem auto;
     border-radius: 2rem;
     padding: 3.5rem 0;
 }
