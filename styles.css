@@ -45,7 +45,7 @@ h2 {
     font-weight: 500;
 }
 
-p, li {
+p, li, td {
     font-size: 1.6rem;
     color: var(--Wenge-Brown);
 }
@@ -64,7 +64,7 @@ li {
 
 .container {
     background-color: var(--White);
-    width: 80rem;
+    max-width: 80rem;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -90,7 +90,7 @@ li {
 
 .preparation {
     background-color: var(--Rose-White);
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 2rem;
  
 }
@@ -108,12 +108,48 @@ li {
     color: var(--Nutmeg);
 }
 
-table, td, th {  
-    border: 1px solid #ddd;
+table, td {  
+    border-bottom: 1px solid #ddd;
     text-align: left;
   }
 
 table {
     border-collapse: collapse;
     width: 100%;
+}
+
+td {
+    padding: 1rem 0;
+}
+
+.nutrition .bold{
+    color: var(--Nutmeg);
+}
+
+.omelette-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+      margin:0;
+      border-radius: 0;
+    }
+    .omelette {
+        display: none;
+    }
+    .omelette-hidden{
+        display: block;
+        position: relative;
+        top: 0;
+        max-width: 100%;
+
+    }
+}
+
+hr {
+    margin: 2rem 0;
+    opacity: .7;
+    background-color: var(--Light-Grey);
+    border: 1px solid var(--Light-Grey);
 }
